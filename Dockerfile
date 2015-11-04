@@ -37,6 +37,5 @@ RUN echo "#!/bin/bash \n ./update.sh & \n apache2-foreground" \
         #sed s#public=#public=1# > tmp && mv tmp data/config.ini \
         #&& rm defaults.ini
 
-# add a production ready php.ini
 VOLUME /var/www/html/data
 CMD ./launch.sh
